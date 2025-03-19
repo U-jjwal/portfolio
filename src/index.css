@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+
+ color: white;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+.hed{
+
+    padding: 3vw 3vw;
+}
+
+.cv{
+   
+
+  left: 50vw;
+    top: -7vw;
+    
+}
+
+.nme{
+    padding-left: 3vw ;
+    padding-top: 5vw;
+    
+}
+.nme h2{
+    padding-top: 3vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.nme p{
+  height: vw;
+    padding-top: 1vw;
+    line-height: vw;
+    z-index: -1;
+}
+
+.sec1{
+  scrollbar-width: none;
+  
+ 
+}
+.container{
+  /* background-color: red; */
+  position: relative;
+  width: 100vw;
+  padding: 5vw 12vw;
+  /* margin-left:13vw; */
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  /* flex-wrap: wrap; */
+ overflow-x: hidden;
+ /* background-color: red; */
+}
+@keyframes slideUpMobile {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    position: relative;
+    width: 200vw;
+    padding: 4vw 2vw; 
+    /* display: flex; */
+    /* justify-content: center; */
+    flex-direction: column; 
+    /* align-items: center; */
+    gap: 4vw; 
+    overflow-x: hidden;
+    /* animation: slideUpMobile 1s ease-in-out; */
+  }
+
+  .line1, .line2, .line3 {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+}
+
+.elem{
+  position: relative;
+  top: 1vh;
+  flex-shrink: 0;
+  height: 30vh;
+  width: 45%;
+  border: 1px solid rgb(48, 46, 46);
+  border-radius: 20px;
+  background-color:;
+  padding: 2vw;
+  box-shadow: 0px 12px 0px rgb(0, 0, 0);
+  display: flex;
+  overflow-x: hidden;
+  
+}
+
+.pra{
+  position: relative;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items:flex-start ;
+  justify-content: space-between;
+  flex-direction: column;
+  scrollbar-width: none;
+  overflow-x: hidden;
+
+}
+
+
+.elem-part1 h2{
+  color: white;
+  font-size: vw;
+  font-family:Georgia, serif;
+  font-weight: 500;
+  
+
+}
