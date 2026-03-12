@@ -7,79 +7,79 @@ gsap.registerPlugin(ScrollTrigger);
 const Pg2 = () => {
   const sliRef = useRef(null);
 
-  useGSAP(() => {
-    if (!sliRef.current) return;
+  // useGSAP(() => {
+  //   if (!sliRef.current) return;
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: sliRef.current,
-        scroller: "body",
-        start: "top 80%",
-        end: "top -50%",
-        scrub: 2,
-        toggleActions: "play none none none",
-      },
-    });
-    tl.from(
-      ".line1.right",
-      {
-        x: 300,
-        opacity: 0,
-        duration: 1,
-      },
-      "same"
-    );
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: sliRef.current,
+  //       scroller: "body",
+  //       start: "top 80%",
+  //       end: "top -50%",
+  //       scrub: 2,
+  //       toggleActions: "play none none none",
+  //     },
+  //   });
+  //   tl.from(
+  //     ".line1.right",
+  //     {
+  //       x: 300,
+  //       opacity: 0,
+  //       duration: 1,
+  //     },
+  //     "same"
+  //   );
 
-    tl.from(
-      ".line1.left",
-      {
-        x: -300,
-        opacity: 0,
-        duration: 1,
-      },
-      "same"
-    );
+  //   tl.from(
+  //     ".line1.left",
+  //     {
+  //       x: -300,
+  //       opacity: 0,
+  //       duration: 1,
+  //     },
+  //     "same"
+  //   );
 
-    tl.from(
-      ".line2.right",
-      {
-        x: 300,
-        opacity: 0,
-        duration: 1,
-      },
-      "tim"
-    );
+  //   tl.from(
+  //     ".line2.right",
+  //     {
+  //       x: 300,
+  //       opacity: 0,
+  //       duration: 1,
+  //     },
+  //     "tim"
+  //   );
 
-    tl.from(
-      ".line2.left",
-      {
-        x: -300,
-        opacity: 0,
-        duration: 1,
-      },
-      "tim"
-    );
+  //   tl.from(
+  //     ".line2.left",
+  //     {
+  //       x: -300,
+  //       opacity: 0,
+  //       duration: 1,
+  //     },
+  //     "tim"
+  //   );
 
-    tl.from(
-      ".line3.right",
-      {
-        x: 300,
-        opacity: 0,
-        duration: 1,
-      },
-      "tm"
-    );
+  //   tl.from(
+  //     ".line3.right",
+  //     {
+  //       x: 300,
+  //       opacity: 0,
+  //       duration: 1,
+  //     },
+  //     "tm"
+  //   );
 
-    tl.from(
-      ".line3.left",
-      {
-        x: -300,
-        opacity: 0,
-        duration: 1,
-      },
-      "tm"
-    );
-  }, []);
+  //   tl.from(
+  //     ".line3.left",
+  //     {
+  //       x: -300,
+  //       opacity: 0,
+  //       duration: 1,
+  //     },
+  //     "tm"
+  //   );
+  // }, []);
 
   return (
     <div ref={sliRef} id="intro" className=" h-screen w-screen ">
@@ -88,8 +88,8 @@ const Pg2 = () => {
       </div>
       <div className="container flex-wrap ">
         <div className="elem left line1 overflow-y-auto">
-          <div className=" ">
-            <h2 className="font-extrabold flex items-center justify-center ">Team Management System</h2>
+          <div className=" ">Team Management System
+            <h2 className="font-extrabold flex items-center justify-center "></h2>
                   <div className="pra overflow-y-auto  max-h-48 w-full">
 
               <p className="">
@@ -147,7 +147,7 @@ This website is perfect for businesses, organizations, and teams looking to enha
         </div>
         <div className="elem bg-black text-white right line1 overflow-y-auto">
         <div className=" ">
-            <h2 className="font-extrabold flex items-center justify-center ">Backent Project</h2>
+            <h2 className="font-extrabold flex items-center justify-center ">Backend Project</h2>
                   <div className="pra overflow-y-auto">
 
               <p className="">

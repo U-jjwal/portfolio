@@ -5,6 +5,7 @@ import Front from './components/Front';
 import Pg2 from './components/Pg2';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
+import Page2 from './components/page2';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -27,14 +28,14 @@ const App = () => {
         <div className="relative z-10 h-screen w-screen bg-transparent overflow-x-hidden">
           <Header />
           <Front />
+          <Page2/>
+          {/* <Pg2 />  */}
+          <Footer />
         </div>
         )}
-          <Pg2 /> 
        
-          <Footer />
     </>
   );
 };
 
 export default App;
-
